@@ -1,0 +1,189 @@
+/* ==========================================================================
+   TEEPEARL EVENT SERVICES - LUXURY ANIMATION SYSTEM
+   ========================================================================== */
+
+/* 1. SCROLL REVEAL ANIMATIONS */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Revealed State Triggered by IntersectionObserver */
+.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Staggered Delays for Grid Children */
+.delay-100 { transition-delay: 0.1s; }
+.delay-150 { transition-delay: 0.15s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-250 { transition-delay: 0.25s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-350 { transition-delay: 0.35s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+
+/* 2. FLOATING & AMBIENT ANIMATIONS */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatDelayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes orbPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.08);
+  }
+}
+
+.anim-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.anim-float-delayed {
+  animation: floatDelayed 7s ease-in-out 2s infinite;
+}
+
+.anim-orb-pulse {
+  animation: orbPulse 8s ease-in-out infinite;
+}
+
+/* 3. PULSING WHATSAPP CALLOUT GLOW */
+@keyframes pulseGlowRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7), 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+  65% {
+    box-shadow: 0 0 0 16px rgba(16, 185, 129, 0), 0 0 32px rgba(212, 175, 55, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0), 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+}
+
+.pulse-glow-cta {
+  animation: pulseGlowRing 2.8s infinite;
+}
+
+/* 4. METALLIC GOLD SHIMMER SWEEP ON BUTTONS */
+@keyframes btnSheen {
+  0% {
+    transform: translateX(-150%);
+  }
+  50%, 100% {
+    transform: translateX(150%);
+  }
+}
+
+.btn-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-150%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.btn-sheen:hover::after {
+  animation: btnSheen 1.5s infinite;
+}
+
+/* 5. CARD ELEVATION & ACCENT HOVER */
+.glass-card-interactive {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.5) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 
+              0 0 25px rgba(212, 175, 55, 0.25) !important;
+}
+
+/* 6. IMAGE ZOOM ON HOVER */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* 7. SMOOTH DETAILS / FAQ EXPANSION */
+details {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+details[open] {
+  border-color: rgba(212, 175, 55, 0.55);
+}
+
+details .faq-content {
+  animation: faqOpen 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes faqOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

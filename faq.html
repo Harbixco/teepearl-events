@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | FAQ | Teepearl Event Services</title>
+  <meta name="description"
+    content="Find answers to all frequently asked questions about booking Teepearl Event Services in Akure, Ondo State & Ekiti: Ushers, drinks chilling, packages, and pricing.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080111',
+              plum: '#150325',
+              velvet: '#1F0538',
+              purple: '#2E0854',
+              royal: '#3B0764',
+              gold: '#D4AF37',
+              goldLight: '#F5D77F',
+              goldDark: '#9A6B1F',
+              champagne: '#FAF3E0',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -5px rgba(212, 175, 55, 0.3)',
+            'gold-lg': '0 0 35px -5px rgba(212, 175, 55, 0.45)',
+            'card': '0 15px 35px -5px rgba(0, 0, 0, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #9A6B1F 100%);
+    }
+
+    .purple-radial-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(91, 19, 148, 0.35) 0%, rgba(31, 5, 56, 0.95) 60%, #080111 100%);
+    }
+
+    .glass-card {
+      background: rgba(31, 5, 56, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-gold selection:text-brand-dark antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5">
+          <div
+            class="w-12 h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-brand-gold via-brand-purple to-brand-gold shadow-gold-glow">
+            <img src="assets/logo.jpg" alt="Teepearl Logo" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <span
+              class="font-serif font-extrabold text-lg md:text-xl tracking-wider gold-gradient-text block leading-tight">TEEPEARL</span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-brand-gold/80 font-semibold">EVENT SERVICES</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Home</a>
+          <a href="services.html"
+            class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Services</a>
+          <a href="about.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">About Us</a>
+          <a href="packages.html"
+            class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Packages</a>
+          <a href="gallery.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Gallery</a>
+          <a href="faq.html"
+            class="text-sm font-semibold text-brand-gold tracking-wide transition relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brand-gold">FAQ</a>
+          <a href="contact.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20have%20a%20question%20about%20your%20services."
+            target="_blank"
+            class="px-5 py-2.5 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:scale-105 transition">
+            Ask on WhatsApp
+          </a>
+        </div>
+
+        <!-- PURE CSS MOBILE MENU TOGGLE -->
+        <div class="lg:hidden flex items-center">
+          <label for="mobile-menu-toggle"
+            class="cursor-pointer p-2.5 text-brand-gold rounded-lg hover:bg-brand-purple/40 border border-brand-gold/30">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PURE CSS MOBILE MENU DRAWER -->
+    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+    <div
+      class="peer-checked:block hidden lg:hidden bg-brand-plum/95 backdrop-blur-xl border-b border-brand-gold/30 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Home</a>
+        <a href="services.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Services</a>
+        <a href="about.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">About Us</a>
+        <a href="packages.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Packages & Pricing</a>
+        <a href="gallery.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Photo Gallery</a>
+        <a href="faq.html" class="text-base font-semibold text-brand-gold">FAQs</a>
+        <a href="contact.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Contact & Booking</a>
+        <div class="pt-4 border-t border-brand-gold/20 flex flex-col gap-2">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20would%20like%20a%20custom%20event%20quote."
+            target="_blank"
+            class="w-full text-center py-3 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SUBPAGE BANNER -->
+  <section class="purple-radial-bg py-10 px-4 sm:px-6 lg:px-8 border-b border-brand-gold/20 text-center relative">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 mb-4">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Frequently Asked Questions</span>
+      </div>
+      <h1 class="font-serif text-3xl sm:text-5xl font-extrabold text-white mb-6">
+        Everything You <span class="gold-gradient-text">Need to Know</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        Have questions about booking our services, package customizations, locations, or on-day logistics? Find instant answers below.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ MAIN ACCORDION -->
+  <section class="py-10 px-4 sm:px-6 lg:px-8 bg-brand-dark relative">
+    <div class="max-w-4xl mx-auto space-y-12">
+
+      <!-- CATEGORY 1: LOCATIONS & GENERAL -->
+      <div>
+        <div class="flex items-center gap-3 mb-6 pb-2 border-b border-brand-gold/20">
+          <i class="fa-solid fa-map-location-dot text-brand-gold text-lg"></i>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Locations & Service Coverage</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                Which locations do you service?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Our primary headquarters is located in <strong>Akure, Ondo State</strong>. We regularly provide full services across all parts of Ondo State (Akure, Ondo Town, Owo, Idanre, Ikare, Ore) and Ekiti State (Ado-Ekiti, Ikere-Ekiti). We are also available for destination celebrations across Southwestern Nigeria upon request.
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                Can I book just one service (like Ushers or Drinks Chilling only)?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Yes, absolutely! While many clients love bundling services together for convenience and special combo pricing, you can freely hire Teepearl for individual services — such as strictly Ushers, strictly Drinks Chilling, or exclusively Custom Cakes.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- CATEGORY 2: BOOKING & PACKAGES -->
+      <div>
+        <div class="flex items-center gap-3 mb-6 pb-2 border-b border-brand-gold/20">
+          <i class="fa-solid fa-calendar-check text-brand-gold text-lg"></i>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Booking, Packages & Payments</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 3 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                How early should I book Teepearl for my event?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Because peak wedding and festive dates (especially Saturdays and December dates) fill up rapidly, we recommend securing your booking at least <strong>3 to 8 weeks in advance</strong>. However, for urgent celebrations or last-minute needs, reach out to us on WhatsApp and we will accommodate you if our team is available.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                Can I customize a package to fit my specific budget?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Yes! Our pre-set packages (Pearl Starter, Royal Signature, Imperial Grand) are designed as convenient baselines. You can add or subtract ushers, increase small chops portions, include a customized cake, or adjust chilling capacity to match your guest count and budget exactly.
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                What are your payment terms to secure our date?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              To lock in your date on our master event calendar, we require an initial commitment deposit. The balance is settled prior to or on the event morning as agreed in your booking contract. We provide official invoices and payment receipts for every transaction.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- CATEGORY 3: USHERS & PROTOCOL -->
+      <div>
+        <div class="flex items-center gap-3 mb-6 pb-2 border-b border-brand-gold/20">
+          <i class="fa-solid fa-user-group text-brand-gold text-lg"></i>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Ushers & Event Hostesses</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 6 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                What attire and training do your ushers have?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Our ushers and hostesses are vetted, etiquette-trained, and immaculately groomed. We provide elegant matching outfits tailored to harmonize with your official event color palette (traditional or contemporary corporate attire) with high standards of customer courtesy.
+            </div>
+          </details>
+
+          <!-- FAQ 7 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                What responsibilities do the hostesses handle during the event?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Our hostesses manage guest arrival welcoming, orderly seating guidance according to VIP and family zones, distribution of program brochures and souvenirs, dignitary high-table food/drink coordination, and assistance with bridal train entrances.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- CATEGORY 4: DRINKS CHILLING & CATERING -->
+      <div>
+        <div class="flex items-center gap-3 mb-6 pb-2 border-b border-brand-gold/20">
+          <i class="fa-solid fa-champagne-glasses text-brand-gold text-lg"></i>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Drinks Chilling & Refreshments</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 8 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                How does the Drinks Chilling service work?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Our drinks chilling crew arrives at the hall hours prior to guest arrival with heavy-duty thermal cooling tubs and clean ice blocks. We sort, chill, and continually rotate all water, soft drinks, beer, malt, and wines, ensuring that every bottle handed to your guests is crisply chilled.
+            </div>
+          </details>
+
+          <!-- FAQ 9 -->
+          <details class="glass-card rounded-2xl border border-brand-gold/25 p-5 group transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-serif font-bold text-base text-white group-hover:text-brand-gold transition">
+                Are your small chops prepared fresh on event day?
+              </span>
+              <div class="faq-icon transition-transform duration-300 text-brand-gold">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </summary>
+            <div class="mt-4 pt-3 border-t border-brand-gold/15 text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Yes, 100%! We prioritize crunch and flavor. Samosas, spring rolls, puff puff, and gizzard skewers are fried and packaged fresh on event morning and kept in thermal warmers so they arrive hot, golden, and delicious for your guests.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- STILL HAVE QUESTIONS CTA -->
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-gold/30 text-center mt-16 shadow-gold-glow">
+        <div class="w-16 h-16 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl mx-auto mb-6 shadow-gold-glow">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-3">Still Have an Unanswered Question?</h3>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto mb-8">
+          Our lead planner is online and ready to assist. Chat with us directly on WhatsApp or call our hotline for quick answers.
+        </p>
+        <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20have%20a%20question%20about%20your%20event%20services."
+          target="_blank"
+          class="inline-flex items-center gap-2 px-8 py-4 rounded-full gold-gradient-bg text-brand-dark font-extrabold text-xs uppercase tracking-wider shadow-gold-lg hover:scale-105 transition">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Chat With Us on WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-gold/30 py-8 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        &copy; 2026 <span class="text-brand-gold font-semibold">Teepearl Event Services</span>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/teepearl_eventservices_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-instagram text-xs"></i>
+        </a>
+        <a href="https://www.facebook.com/teepearl01" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-facebook-f text-xs"></i>
+        </a>
+        <a href="https://wa.me/2347065795449" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-whatsapp text-xs"></i>
+        </a>
+        <a href="mailto:teepearlcakes@gmail.com" aria-label="Email"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-envelope text-xs"></i>
+        </a>
+        <a href="tel:+2347065795449" aria-label="Phone"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-phone text-xs"></i>
+        </a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <a href="index.html" class="hover:text-brand-gold transition">Home</a>
+        <a href="services.html" class="hover:text-brand-gold transition">Services</a>
+        <a href="about.html" class="hover:text-brand-gold transition">About Us</a>
+        <a href="packages.html" class="hover:text-brand-gold transition">Packages</a>
+        <a href="gallery.html" class="hover:text-brand-gold transition">Gallery</a>
+        <a href="faq.html" class="hover:text-brand-gold text-brand-gold font-semibold transition">FAQ</a>
+        <a href="contact.html" class="hover:text-brand-gold transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CALLOUT BUTTON (PULSING GOLD-EMERALD) -->
+  <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99m%20planning%20an%20event%20and%20would%20like%20to%20chat%20with%20your%20team."
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 group border border-emerald-300/40 pulse-glow-cta">
+    <div class="relative">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <span class="absolute -top-1 -right-1 w-3 h-3 bg-brand-gold rounded-full animate-ping"></span>
+    </div>
+    <span class="text-xs font-bold uppercase tracking-wider hidden sm:inline-block">Chat on WhatsApp</span>
+  </a>
+
+  <!-- DYNAMIC ANIMATION ENGINE -->
+  <script src="animations.js"></script>
+
+</body>
+
+</html>

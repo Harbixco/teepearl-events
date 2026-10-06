@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Event Packages & Bundles | Teepearl Event Services</title>
+  <meta name="description"
+    content="Explore transparent event packages and service bundles for weddings, birthdays, and celebrations in Akure, Ondo State & Ekiti. Ushers, drinks chilling, cakes, small chops & rentals.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080111',
+              plum: '#150325',
+              velvet: '#1F0538',
+              purple: '#2E0854',
+              royal: '#3B0764',
+              gold: '#D4AF37',
+              goldLight: '#F5D77F',
+              goldDark: '#9A6B1F',
+              champagne: '#FAF3E0',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -5px rgba(212, 175, 55, 0.3)',
+            'gold-lg': '0 0 35px -5px rgba(212, 175, 55, 0.45)',
+            'card': '0 15px 35px -5px rgba(0, 0, 0, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #9A6B1F 100%);
+    }
+
+    .purple-radial-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(91, 19, 148, 0.35) 0%, rgba(31, 5, 56, 0.95) 60%, #080111 100%);
+    }
+
+    .glass-card {
+      background: rgba(31, 5, 56, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-gold selection:text-brand-dark antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5">
+          <div
+            class="w-12 h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-brand-gold via-brand-purple to-brand-gold shadow-gold-glow">
+            <img src="assets/logo.jpg" alt="Teepearl Logo" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <span
+              class="font-serif font-extrabold text-lg md:text-xl tracking-wider gold-gradient-text block leading-tight">TEEPEARL</span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-brand-gold/80 font-semibold">EVENT SERVICES</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Home</a>
+          <a href="services.html"
+            class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Services</a>
+          <a href="about.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">About Us</a>
+          <a href="packages.html"
+            class="text-sm font-semibold text-brand-gold tracking-wide transition relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brand-gold">Packages</a>
+          <a href="gallery.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Gallery</a>
+          <a href="faq.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">FAQ</a>
+          <a href="contact.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%E2%80%99d%20like%20to%20inquire%20about%20your%20Event%20Packages."
+            target="_blank"
+            class="px-5 py-2.5 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:scale-105 transition">
+            Custom Quote
+          </a>
+        </div>
+
+        <!-- PURE CSS MOBILE MENU TOGGLE -->
+        <div class="lg:hidden flex items-center">
+          <label for="mobile-menu-toggle"
+            class="cursor-pointer p-2.5 text-brand-gold rounded-lg hover:bg-brand-purple/40 border border-brand-gold/30">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PURE CSS MOBILE MENU DRAWER -->
+    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+    <div
+      class="peer-checked:block hidden lg:hidden bg-brand-plum/95 backdrop-blur-xl border-b border-brand-gold/30 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Home</a>
+        <a href="services.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Services</a>
+        <a href="about.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">About Us</a>
+        <a href="packages.html" class="text-base font-semibold text-brand-gold">Packages & Pricing</a>
+        <a href="gallery.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Photo Gallery</a>
+        <a href="faq.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">FAQs</a>
+        <a href="contact.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Contact & Booking</a>
+        <div class="pt-4 border-t border-brand-gold/20 flex flex-col gap-2">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20would%20like%20a%20custom%20event%20quote."
+            target="_blank"
+            class="w-full text-center py-3 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SUBPAGE BANNER -->
+  <section class="purple-radial-bg py-10 px-4 sm:px-6 lg:px-8 border-b border-brand-gold/20 text-center relative">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 mb-4">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Curated Event Packages & Service Bundles</span>
+      </div>
+      <h1 class="font-serif text-3xl sm:text-5xl font-extrabold text-white mb-6">
+        Tailored Bundles For <span class="gold-gradient-text">Every Celebration</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        Enjoy seamless all-in-one convenience. Choose a pre-curated package or let our lead planner create a bespoke bundle combining ushers, drinks chilling, celebration cakes, small chops, and hall setup.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN PACKAGES SECTION -->
+  <section class="py-10 px-4 sm:px-6 lg:px-8 bg-brand-dark relative">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- 3 PACKAGES GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">
+        
+        <!-- PACKAGE 1: ESSENTIAL CELEBRATION -->
+        <div class="glass-card glass-card-interactive rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-brand-gold/20 hover:border-brand-gold/50 transition duration-300 reveal-up delay-100">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Essential Package</div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">Pearl Starter</h2>
+            <p class="text-xs text-slate-400 mb-6">Ideal for intimate family gatherings, birthday dinners, and small receptions up to 100 guests.</p>
+            
+            <div class="border-t border-brand-gold/20 pt-6 mb-6 space-y-3.5 text-xs text-slate-300">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>4 Professional Ushers / Hostesses</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Complete Drinks Chilling with Clean Ice</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Guest Welcoming & Seating Direction</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Dedicated On-Site Supervisor</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Souvenir & Gift Distribution Assistance</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99m%20interested%20in%20the%20Pearl%20Starter%20Package.%20Please%20provide%20a%20quote%20for%20my%20event%20date."
+            target="_blank"
+            class="w-full text-center py-3 rounded-full border border-brand-gold/50 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase tracking-wider transition duration-300">
+            Enquire for Pearl Starter
+          </a>
+        </div>
+
+        <!-- PACKAGE 2: SIGNATURE ELEGANCE (FEATURED) -->
+        <div class="glass-card glass-card-interactive rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-2 border-brand-gold shadow-gold-glow relative bg-brand-velvet/80 transform lg:-translate-y-3 reveal-up delay-200">
+          <!-- Featured Badge -->
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full gold-gradient-bg text-brand-dark font-black text-[10px] uppercase tracking-widest shadow-md">
+            Most Popular Choice
+          </div>
+
+          <div>
+            <div class="text-xs font-bold uppercase tracking-widest text-brand-goldLight mb-2">Signature Package</div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">Royal Signature</h2>
+            <p class="text-xs text-slate-300 mb-6">Designed for premier weddings, milestone anniversaries, and grand birthdays (150 - 350 guests).</p>
+            
+            <div class="border-t border-brand-gold/30 pt-6 mb-6 space-y-3.5 text-xs text-slate-200">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">6 - 8 Elegant Uniformed Hostesses</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">Full-Scale Drinks Chilling & Continuous Ice</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">Gourmet Small Chops Platter (150+ Guests)</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">Fresh Live Butter Popcorn Cart Station</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">On-Day Timeline Coordinator</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-crown text-brand-gold"></i>
+                <span class="font-medium text-white">VIP Dignitary High-Table Service</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99m%20interested%20in%20the%20Royal%20Signature%20Package.%20Please%20provide%20a%20quote%20for%20my%20event."
+            target="_blank"
+            class="w-full text-center py-3.5 rounded-full gold-gradient-bg text-brand-dark font-extrabold text-xs uppercase tracking-wider shadow-gold-lg hover:scale-105 transition duration-300">
+            Book Royal Signature
+          </a>
+        </div>
+
+        <!-- PACKAGE 3: IMPERIAL GRAND -->
+        <div class="glass-card glass-card-interactive rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-brand-gold/20 hover:border-brand-gold/50 transition duration-300 reveal-up delay-300">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">All-Inclusive Luxury</div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">Imperial Grand</h2>
+            <p class="text-xs text-slate-400 mb-6">Complete VIP turnkey event execution for luxury weddings, political galas, and corporate summits.</p>
+            
+            <div class="border-t border-brand-gold/20 pt-6 mb-6 space-y-3.5 text-xs text-slate-300">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>10+ Hostesses & Dedicated Bride Assistant</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>End-to-End Planning & Timeline Protocol</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Multi-Tiered Luxury Wedding/Celebration Cake</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Premium Finger Foods & Popcorn Service</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Hall Setup & Complete Equipment Rentals</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-gold"></i>
+                <span>Pre-Event Venue Inspection & Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99d%20like%20to%20discuss%20the%20Imperial%20Grand%20All-Inclusive%20Package."
+            target="_blank"
+            class="w-full text-center py-3 rounded-full border border-brand-gold/50 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase tracking-wider transition duration-300">
+            Enquire for Imperial Grand
+          </a>
+        </div>
+
+      </div>
+
+      <!-- CUSTOM QUOTE BAR -->
+      <div class="glass-card rounded-3xl p-8 sm:p-10 border border-brand-gold/30 flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
+        <div class="flex items-center gap-5 text-center md:text-left">
+          <div class="w-16 h-16 rounded-2xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl flex-shrink-0 shadow-gold-glow">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <h3 class="font-serif font-bold text-xl sm:text-2xl text-white">Need a Custom Combination of Services?</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+              Don't need a rigid bundle? Pick only the exact services your event requires — e.g. strictly Ushers + Drinks Chilling or Custom Cake + Small Chops. We provide transparent individual or combo pricing.
+            </p>
+          </div>
+        </div>
+        <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20would%20like%20to%20build%20a%20custom%20service%20combination%20for%20my%20event."
+          target="_blank"
+          class="px-8 py-4 rounded-full gold-gradient-bg text-brand-dark font-extrabold text-xs uppercase tracking-wider whitespace-nowrap shadow-gold-glow hover:scale-105 transition flex-shrink-0">
+          Build Custom Quote on WhatsApp
+        </a>
+      </div>
+
+      <!-- COMPARISON TABLE -->
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-brand-gold/20 overflow-hidden mb-20">
+        <div class="text-center mb-8">
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Package Feature Comparison</h3>
+          <p class="text-slate-300 text-xs sm:text-sm mt-1">Review what each package includes at a glance.</p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+            <thead>
+              <tr class="border-b border-brand-gold/30 text-white font-serif">
+                <th class="py-4 px-4 font-bold">Service Feature</th>
+                <th class="py-4 px-4 text-center font-bold">Pearl Starter</th>
+                <th class="py-4 px-4 text-center font-bold text-brand-gold">Royal Signature</th>
+                <th class="py-4 px-4 text-center font-bold">Imperial Grand</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-brand-gold/15">
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Professional Hostesses & Ushers</td>
+                <td class="py-3 px-4 text-center">4 Ushers</td>
+                <td class="py-3 px-4 text-center text-brand-gold font-bold">6 - 8 Ushers</td>
+                <td class="py-3 px-4 text-center">10+ Hostesses</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Drinks Chilling & Ice Management</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (Standard)</td>
+                <td class="py-3 px-4 text-center text-emerald-400 font-bold"><i class="fa-solid fa-check"></i> (Continuous Rotation)</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (VIP & Hall Wide)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Nigerian Small Chops & Appetizers</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-emerald-400 font-bold"><i class="fa-solid fa-check"></i> (150+ Guests)</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (Premium Spread)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Live Warm Popcorn Cart Station</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-emerald-400 font-bold"><i class="fa-solid fa-check"></i> (Included)</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (Included)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Custom Tiered Celebration Cake</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (Grand Multi-Tier)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">On-Site Timeline Coordination</td>
+                <td class="py-3 px-4 text-center">Supervisor Only</td>
+                <td class="py-3 px-4 text-center text-brand-gold font-bold"><i class="fa-solid fa-check"></i> Lead Coordinator</td>
+                <td class="py-3 px-4 text-center text-brand-gold font-bold"><i class="fa-solid fa-check"></i> Full Coordination Team</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-white">Equipment Rentals & Reception Setup</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-slate-500">Optional Add-on</td>
+                <td class="py-3 px-4 text-center text-emerald-400"><i class="fa-solid fa-check"></i> (Full Hall Setup)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAQ TEASER -->
+      <div class="text-center">
+        <h4 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">Have Questions About Booking & Customizing?</h4>
+        <p class="text-slate-300 text-xs sm:text-sm mb-6 max-w-xl mx-auto">
+          Read answers to frequently asked questions on booking timelines, dress codes, locations, and payment terms.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="faq.html"
+            class="px-6 py-3 rounded-full border border-brand-gold/50 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase tracking-wider transition">
+            View Frequently Asked Questions
+          </a>
+          <a href="contact.html"
+            class="px-6 py-3 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:scale-105 transition">
+            Contact Teepearl Directly
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-gold/30 py-8 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        &copy; 2026 <span class="text-brand-gold font-semibold">Teepearl Event Services</span>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/teepearl_eventservices_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-instagram text-xs"></i>
+        </a>
+        <a href="https://www.facebook.com/teepearl01" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-facebook-f text-xs"></i>
+        </a>
+        <a href="https://wa.me/2347065795449" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-whatsapp text-xs"></i>
+        </a>
+        <a href="mailto:teepearlcakes@gmail.com" aria-label="Email"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-envelope text-xs"></i>
+        </a>
+        <a href="tel:+2347065795449" aria-label="Phone"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-phone text-xs"></i>
+        </a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <a href="index.html" class="hover:text-brand-gold transition">Home</a>
+        <a href="services.html" class="hover:text-brand-gold transition">Services</a>
+        <a href="about.html" class="hover:text-brand-gold transition">About Us</a>
+        <a href="packages.html" class="hover:text-brand-gold text-brand-gold font-semibold transition">Packages</a>
+        <a href="gallery.html" class="hover:text-brand-gold transition">Gallery</a>
+        <a href="faq.html" class="hover:text-brand-gold transition">FAQ</a>
+        <a href="contact.html" class="hover:text-brand-gold transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CALLOUT BUTTON (PULSING GOLD-EMERALD) -->
+  <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99m%20planning%20an%20event%20and%20would%20like%20to%20chat%20with%20your%20team."
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 group border border-emerald-300/40 pulse-glow-cta">
+    <div class="relative">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <span class="absolute -top-1 -right-1 w-3 h-3 bg-brand-gold rounded-full animate-ping"></span>
+    </div>
+    <span class="text-xs font-bold uppercase tracking-wider hidden sm:inline-block">Chat on WhatsApp</span>
+  </a>
+
+  <!-- DYNAMIC ANIMATION ENGINE -->
+  <script src="animations.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Moments We've Created | Teepearl Event Services</title>
+  <meta name="description"
+    content="Explore photos from recent celebrations, weddings, hostesses, cakes, and drinks chilling across Akure, Ondo and Ekiti by Teepearl Event Services.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080111',
+              plum: '#150325',
+              velvet: '#1F0538',
+              purple: '#2E0854',
+              royal: '#3B0764',
+              violet: '#581c87',
+              accent: '#7e22ce',
+              goldLight: '#FDE047',
+              gold: '#D4AF37',
+              goldMuted: '#C5A059',
+              goldDark: '#92400e',
+              pearl: '#FAF7FD',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -3px rgba(212, 175, 55, 0.35)',
+            'card': '0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 50%, #AA771C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #9A6B1F 100%);
+    }
+
+    .purple-radial-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(91, 19, 148, 0.35) 0%, rgba(31, 5, 56, 0.95) 60%, #080111 100%);
+    }
+
+    .glass-card {
+      background: rgba(31, 5, 56, 0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-gold selection:text-brand-dark antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3.5">
+          <div
+            class="w-12 h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-brand-gold via-brand-purple to-brand-gold shadow-gold-glow">
+            <img src="assets/logo.jpg" alt="Teepearl Logo" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <span
+              class="font-serif font-extrabold text-lg md:text-xl tracking-wider gold-gradient-text block leading-tight">TEEPEARL</span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-brand-gold/80 font-semibold">EVENT SERVICES</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Home</a>
+          <a href="services.html"
+            class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Services</a>
+          <a href="about.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">About Us</a>
+          <a href="packages.html"
+            class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Packages</a>
+          <a href="gallery.html"
+            class="text-sm font-semibold text-brand-gold tracking-wide transition relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-brand-gold">Gallery</a>
+          <a href="faq.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">FAQ</a>
+          <a href="contact.html" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20love%20your%20gallery%20and%20would%20like%20a%20quote."
+            target="_blank"
+            class="px-5 py-2.5 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:scale-105 transition">
+            Book Event
+          </a>
+        </div>
+
+        <!-- PURE CSS MOBILE MENU TOGGLE -->
+        <div class="lg:hidden flex items-center">
+          <label for="mobile-menu-toggle"
+            class="cursor-pointer p-2.5 text-brand-gold rounded-lg hover:bg-brand-purple/40 border border-brand-gold/30">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PURE CSS MOBILE MENU DRAWER -->
+    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+    <div
+      class="peer-checked:block hidden lg:hidden bg-brand-plum/95 backdrop-blur-xl border-b border-brand-gold/30 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Home</a>
+        <a href="services.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Services</a>
+        <a href="about.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">About Us</a>
+        <a href="packages.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Packages & Pricing</a>
+        <a href="gallery.html" class="text-base font-semibold text-brand-gold">Photo Gallery</a>
+        <a href="faq.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">FAQs</a>
+        <a href="contact.html" class="text-base font-medium text-slate-200 hover:text-brand-gold">Contact & Booking</a>
+        <div class="pt-4 border-t border-brand-gold/20 flex flex-col gap-2">
+          <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%2C%20I%20would%20like%20a%20custom%20event%20quote."
+            target="_blank"
+            class="w-full text-center py-3 rounded-full gold-gradient-bg text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold-glow flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="purple-radial-bg py-10 px-4 text-center border-b border-brand-gold/20">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 mb-4">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Curated Celebrations &
+          Milestones</span>
+      </div>
+      <h1 class="font-serif text-3xl sm:text-5xl font-extrabold text-white mb-6">
+        Moments We've <span class="gold-gradient-text">Helped Create</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        Explore visual highlights from our wedding receptions, trained ushering teams, cake displays, drinks chilling
+        setups, and party equipment across Ondo and Ekiti.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY MASONRY -->
+  <section class="py-10 px-4 sm:px-6 lg:px-8 bg-brand-dark">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- FILTER BUTTONS -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <button onclick="filterGallery('all')"
+          class="gallery-filter-btn active px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition bg-brand-gold text-brand-dark shadow-gold-glow"
+          data-filter="all">All Moments</button>
+        <button onclick="filterGallery('decor')"
+          class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30"
+          data-filter="decor">Decor & Halls</button>
+        <button onclick="filterGallery('ushers')"
+          class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30"
+          data-filter="ushers">Ushers & Protocol</button>
+        <button onclick="filterGallery('cakes')"
+          class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30"
+          data-filter="cakes">Custom Cakes</button>
+        <button onclick="filterGallery('chilling')"
+          class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30"
+          data-filter="chilling">Drinks Chilling</button>
+        <button onclick="filterGallery('catering')"
+          class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30"
+          data-filter="catering">Small Chops</button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="galleryGrid">
+
+        <!-- CARD 1: Hall Decor -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="decor">
+          <img src="assets/event-hall-purple.jpg" alt="Purple & Gold Luxury Banquet Hall Reception"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Akure Wedding Reception</span>
+            <h3 class="font-serif font-bold text-lg text-white">Full Event Coordination & Setup</h3>
+            <p class="text-xs text-slate-300 mb-3">Grand purple & gold draping and ambient table setup.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%20love%20the%20wedding%20reception%20setup%20in%20your%20gallery.%20Can%20we%20discuss%20my%20event%3F"
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Similar Service</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: Ushers Team -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="ushers">
+          <img src="assets/ushers-team.jpg" alt="Professional Hostess & Ushering Team"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Ushers & Protocol</span>
+            <h3 class="font-serif font-bold text-lg text-white">VIP Guest Ushering Team</h3>
+            <p class="text-xs text-slate-300 mb-3">Elegantly styled hostesses with courteous smiles.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%20want%20to%20book%20your%20ushers%20for%20my%20event."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Ushers</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3: Custom Cake Busayo -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="cakes">
+          <img src="assets/cake-busayo.jpg" alt="Signature 4-Tier Celebration Cake"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Artisan Confectionery</span>
+            <h3 class="font-serif font-bold text-lg text-white">4-Tier Grand Wedding Cake</h3>
+            <p class="text-xs text-slate-300 mb-3">Rich fruitcake, velvety vanilla and edible sugar pearls.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%20want%20to%20order%20a%20cake%20similar%20to%20your%20gallery%20piece."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Order Custom Cake</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 4: Drinks Chilling Idanre -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="chilling">
+          <img src="assets/drinks-chilling-1.jpg" alt="Frosted Drinks Chilling Station Setup in Idanre"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Ice Management</span>
+            <h3 class="font-serif font-bold text-lg text-white">Frosted Drinks Chilling Station</h3>
+            <p class="text-xs text-slate-300 mb-3">Continuous icing for over 500 guest bottles in Idanre.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20book%20your%20Drinks%20Chilling%20service."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Drinks Chilling</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 5: Small Chops Platter -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="catering">
+          <img src="assets/small-chops-1.jpg" alt="Crispy Small Chops Platter"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Gourmet Catering</span>
+            <h3 class="font-serif font-bold text-lg text-white">Crispy Small Chops Platters</h3>
+            <p class="text-xs text-slate-300 mb-3">Hot samosas, spring rolls, puff-puff & peppered chicken.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20order%20Small%20Chops%20for%20my%20event."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Small Chops</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 6: Service Banner Hall Setup -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="decor">
+          <img src="assets/service-banner-hall.jpg" alt="Banquet Seating Decor & Hall Transformation"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Equipment Rentals</span>
+            <h3 class="font-serif font-bold text-lg text-white">Banquet Seating & Stage Setup</h3>
+            <p class="text-xs text-slate-300 mb-3">Luxury Chiavari chairs, damask linen & stage lighting.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99m%20interested%20in%20your%20rentals%20and%20hall%20setup."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Setup & Rentals</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 7: Custom Cake Ilara -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="cakes">
+          <img src="assets/cake-ilara.jpg" alt="Luxury Celebration Tiered Cake Setup in Ilara"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Bakery Showcase</span>
+            <h3 class="font-serif font-bold text-lg text-white">Tiered Anniversary Celebration Cake</h3>
+            <p class="text-xs text-slate-300 mb-3">Custom crafted for a landmark celebration in Ilara-Mokin.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20order%20a%20celebration%20cake."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Order Celebration Cake</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 8: Drinks Exotic Ice Station -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="chilling">
+          <img src="assets/drinks-exotic-ice.jpg" alt="Exotic Ice Beverage Chilling Setup"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Deep Chilling</span>
+            <h3 class="font-serif font-bold text-lg text-white">Ice Chest Drinks Cooling Station</h3>
+            <p class="text-xs text-slate-300 mb-3">Rapid cooling keeping wines, beers and sodas icy cold.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20book%20Drinks%20Chilling."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Drinks Chilling</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 9: Usher Serving High Table -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="ushers">
+          <img src="assets/usher-serving.jpg" alt="Usher Attending to VIP Guests at High Table"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Guest Hospitality</span>
+            <h3 class="font-serif font-bold text-lg text-white">High Table & Dignitary Service</h3>
+            <p class="text-xs text-slate-300 mb-3">Dedicated server ensuring guests are refreshed with chilled drinks.
+            </p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%20want%20to%20book%20your%20hostesses%20and%20ushers."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Ushers & Servers</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 10: Fresh Small Chops Box -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="catering">
+          <img src="assets/small-chops-2.jpg" alt="Party Packs of Fresh Hot Small Chops"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Party Refreshments</span>
+            <h3 class="font-serif font-bold text-lg text-white">Golden Puff Puff & Spring Rolls</h3>
+            <p class="text-xs text-slate-300 mb-3">Prepared fresh on event morning for maximum crunch & flavor.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20order%20Small%20Chops."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Order Small Chops</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 11: Red Hall Canopy Decor -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="decor">
+          <img src="assets/event-hall-red.jpg" alt="Red & Gold Royal Canopy & Hall Decor"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Royal Decor</span>
+            <h3 class="font-serif font-bold text-lg text-white">Crimson & Gold Reception Hall</h3>
+            <p class="text-xs text-slate-300 mb-3">Opulent traditional engagement & wedding banquet decor.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%20love%20the%20red%20hall%20decor%20in%20your%20gallery."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Book Decor Service</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 12: Couple Celebration Toast -->
+        <div
+          class="gallery-item group relative rounded-3xl overflow-hidden glass-card border border-brand-gold/30 shadow-card"
+          data-category="decor">
+          <img src="assets/celebration-couple.jpg" alt="Unforgettable Wedding Celebration Moments"
+            class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-6">
+            <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest">Celebration Moments</span>
+            <h3 class="font-serif font-bold text-lg text-white">Happy Celebrants & Guests</h3>
+            <p class="text-xs text-slate-300 mb-3">Teepearl smooth coordination lets you celebrate stress-free.</p>
+            <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%2C%20I%E2%80%99d%20like%20to%20plan%20my%20wedding%20with%20you."
+              target="_blank" class="text-xs text-brand-gold font-bold hover:underline flex items-center gap-1">
+              <span>Plan Your Event</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VIDEO / INSTAGRAM PORTFOLIO PROMPT -->
+      <div class="mt-16 glass-card rounded-3xl p-8 sm:p-10 border border-brand-gold/30 text-center max-w-3xl mx-auto">
+        <h4 class="font-serif text-2xl font-bold text-white mb-2">Want to See Full Video Coverage & Client Reviews?</h4>
+        <p class="text-slate-300 text-xs sm:text-sm mb-6">We regularly post live clips of our hostesses in action, fresh
+          small chops frying on-site, and full reception transformations on WhatsApp and social media.</p>
+        <a href="https://wa.me/2347065795449?text=Hi%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99d%20like%20to%20see%20more%20videos%20of%20your%20recent%20event%20setups."
+          target="_blank"
+          class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full gold-gradient-bg text-brand-dark font-extrabold text-xs uppercase tracking-wider shadow-gold-glow hover:scale-105 transition">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Request Video Showcase on WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-gold/30 py-8 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        &copy; 2026 <span class="text-brand-gold font-semibold">Teepearl Event Services</span>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/teepearl_eventservices_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-instagram text-xs"></i>
+        </a>
+        <a href="https://www.facebook.com/teepearl01" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-facebook-f text-xs"></i>
+        </a>
+        <a href="https://wa.me/2347065795449" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-brands fa-whatsapp text-xs"></i>
+        </a>
+        <a href="mailto:teepearlcakes@gmail.com" aria-label="Email"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-envelope text-xs"></i>
+        </a>
+        <a href="tel:+2347065795449" aria-label="Phone"
+          class="w-8 h-8 rounded-full glass-card border border-brand-gold/30 flex items-center justify-center text-brand-gold hover:bg-brand-gold hover:text-brand-dark transition">
+          <i class="fa-solid fa-phone text-xs"></i>
+        </a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <a href="index.html" class="hover:text-brand-gold transition">Home</a>
+        <a href="services.html" class="hover:text-brand-gold transition">Services</a>
+        <a href="about.html" class="hover:text-brand-gold transition">About Us</a>
+        <a href="packages.html" class="hover:text-brand-gold transition">Packages</a>
+        <a href="gallery.html" class="hover:text-brand-gold text-brand-gold font-semibold transition">Gallery</a>
+        <a href="faq.html" class="hover:text-brand-gold transition">FAQ</a>
+        <a href="contact.html" class="hover:text-brand-gold transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CALLOUT BUTTON (PULSING GOLD-EMERALD) -->
+  <a href="https://wa.me/2347065795449?text=Hello%20Teepearl%20%F0%9F%91%8B%F0%9F%8F%BD%20I%E2%80%99m%20planning%20an%20event%20and%20would%20like%20to%20chat%20with%20your%20team."
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 group border border-emerald-300/40 pulse-glow-cta">
+    <div class="relative">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <span class="absolute -top-1 -right-1 w-3 h-3 bg-brand-gold rounded-full animate-ping"></span>
+    </div>
+    <span class="text-xs font-bold uppercase tracking-wider hidden sm:inline-block">Chat on WhatsApp</span>
+  </a>
+
+  <!-- DYNAMIC ANIMATION ENGINE -->
+  <script src="animations.js"></script>
+
+  <script>
+    function filterGallery(category) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.className = 'gallery-filter-btn active px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition bg-brand-gold text-brand-dark shadow-gold-glow';
+        } else {
+          btn.className = 'gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition glass-card text-slate-300 hover:text-brand-gold border border-brand-gold/30';
+        }
+      });
+
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+          item.style.animation = 'faqOpen 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
